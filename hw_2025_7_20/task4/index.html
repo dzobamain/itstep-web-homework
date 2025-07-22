@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task 4</h1>
+
+  <form id="orderForm">
+    <label>
+      Виберіть товар:
+      <select id="item">
+        <option value="Товар A">Товар A</option>
+        <option value="Товар B">Товар B</option>
+        <option value="Товар C">Товар C</option>
+      </select>
+    </label>
+
+    <label>
+      Кількість:
+      <input type="number" id="quantity" min="1" required />
+    </label>
+
+    <label>
+      Ім’я:
+      <input type="text" id="name" required />
+    </label>
+
+    <label>
+      Дата доставки:
+      <input type="date" id="date" required />
+    </label>
+
+    <label>
+      Адреса доставки:
+      <input type="text" id="address" required />
+    </label>
+
+    <label>
+      Коментар:
+      <textarea id="comment"></textarea>
+    </label>
+
+    <button type="submit">Надіслати</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
