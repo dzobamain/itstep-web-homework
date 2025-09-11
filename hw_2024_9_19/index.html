@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- l -->
+        <div class="form-section">
+            <h2>Add color</h2>
+            <form id="colorForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <div class="error" id="nameError"></div>
+
+                <label for="type">Type:</label>
+                <select id="type">
+                    <option value="RGB">RGB</option>
+                    <option value="RGBA">RGBA</option>
+                    <option value="HEX">HEX</option>
+                </select>
+                <div class="error" id="typeError"></div>
+
+                <label for="code">Code:</label>
+                <input type="text" id="code" required placeholder="e.g. 255,0,0 or #FF0000">
+                <div class="error" id="codeError"></div>
+
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        <!-- r -->
+        <div class="palette-section">
+            <h2>Palette</h2>
+            <div id="palette"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

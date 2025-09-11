@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.form-section, .palette-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius, 10px);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  background: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius, 10px);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+}
+
+#palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--border-radius, 10px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 2px black;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
