@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDb Movie Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Movie Search</h1>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Enter movie title">
+    <select id="genreSelect">
+      <option value="">All genres</option>
+      <option value="Action">Action</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Drama">Drama</option>
+      <option value="Horror">Horror</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+    </select>
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div id="movies" class="movies-grid"></div>
+  <div class="pagination" id="pagination"></div>
+  <div id="details"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
