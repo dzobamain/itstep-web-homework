@@ -1,0 +1,79 @@
+/* Fullscreen layout, no scrolls */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Left block */
+.left {
+    width: 200px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+/* Toggle button */
+.toggle {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #888;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Right container */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Top and bottom blocks */
+.top,
+.bottom {
+    min-height: 100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: #c59090;
+}
+
+.bottom {
+    background: #bbde82;
+}
+
+/* Resizer bar */
+.resizer {
+    height: 10px;
+    background: #999;
+    cursor: row-resize;
+    text-align: center;
+    color: rgb(225, 214, 129);
+    font-size: 16px;
+    user-select: none;
+}

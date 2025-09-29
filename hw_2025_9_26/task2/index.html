@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resizable Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- ⚠️ Note: Some icons may not display correctly in Firefox -->
+    <div class="container">
+        <!-- Left block with toggle arrow -->
+        <div class="left" id="leftBlock">
+            <div class="toggle" id="toggleBtn">&#9664;</div>
+        </div>
+
+        <!-- Right side (split into top and bottom with resizer) -->
+        <div class="right">
+            <div class="top" id="topBlock">b1</div>
+            <div class="resizer" id="resizer">&#x2261;</div>
+            <div class="bottom" id="bottomBlock">b2</div>
+        </div>
+    </div>
+</body>
+
+</html>
