@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Paint Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <select id="shape" class="tool-control" title="Shapes">
+            <option value="line">Line</option>
+            <option value="rect">Square</option>
+            <option value="triangle">Triangle</option>
+            <option value="oval">Oval</option>
+        </select>
+
+        <!-- Fill toggle button -->
+        <button id="fillToggle" class="tool-control" title="Fill (On/Off)">✔️</button>
+
+        <!-- Color picker -->
+        <input type="color" id="color" class="tool-control" title="Color" value="#007bff">
+
+        <!-- Clear canvas button -->
+        <button id="clear" class="tool-control" title="Clear Canvas">
+            <img src="icon/image.png" alt="Clear" class="icon">
+        </button>
+    </div>
+
+    <canvas id="canvas" width="900" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
