@@ -1,0 +1,102 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #326FBC;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  /* Sharp text shadow */
+  text-shadow: 2px 2px 1px #23438E;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 180px;
+  text-align: left;
+  font-size: 14px;
+
+  /* Sharp box shadow */
+  box-shadow: 2px 2px 1px #23438E;
+}
+
+/* Club logo image */
+.card img {
+  width: 80px;
+  margin-top: 10px;
+  display: block;
+}
+
+.card p {
+  margin: 4px 0;
+  line-height: 1.4; /* controls line height */
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 16px;
+  margin: 4px 0;
+}
+
+.card li {
+  margin: 2px 0;
+  line-height: 1.4; /* line spacing */
+}
+
+/* Styles */
+/* (task 2) */
+.card-style1-Dynamo-Kyiv {
+  background-color: #f0f8ff;
+  color: #DDAF41;
+  box-shadow: 2px 2px 1px #C39338;
+}
+
+.card-style2-Dynamo-Kyiv {
+  background-color: #f0f8ff;
+  color: #326FBC;
+  box-shadow: 2px 2px 1px #23438E;
+}
+
+/* other */
+.card-style-Shakhtar {
+  background-color: #f0f8ff;
+  color: #000000;
+  box-shadow: 2px 2px 1px #000000;
+}
+
+.card-style-Lviv-FC {
+  background-color: #f0f8ff;
+  color: #B3544E;
+  box-shadow: 2px 2px 1px #8C3F39;
+}
