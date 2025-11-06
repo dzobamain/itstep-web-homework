@@ -1,0 +1,36 @@
+/* global page background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+/* main app container */
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  /* remove unwanted Vite styles */
+  text-align: left;
+
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* remove Vite template leftovers */
+.logo,
+.card,
+.read-the-docs {
+  all: unset;
+}
+
+/* reset link styling if needed */
+a {
+  text-decoration: none;
+  color: inherit;
+}
