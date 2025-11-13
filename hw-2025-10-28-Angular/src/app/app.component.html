@@ -1,0 +1,22 @@
+<!-- Task 1 -->
+<h1>Bill Gates Quote</h1>
+<p>{{ mainQuote }}</p>
+
+<!-- Task 2 -->
+<h2>Other Quotes</h2>
+<ul>
+  <li *ngFor="let quote of quotes">{{ quote }}</li>
+</ul>
+
+<!-- Task 3 -->
+<h2>About Bill Gates</h2>
+<img [src]="imageUrl" alt="Bill Gates" width="200" />
+<p>{{ bio }}</p>
+
+<!-- Task 4 -->
+<h2>Useful Links</h2>
+<ul>
+  <li *ngFor="let link of links">
+    <a [href]="link.url" target="_blank">{{ link.name }}</a>
+  </li>
+</ul>
